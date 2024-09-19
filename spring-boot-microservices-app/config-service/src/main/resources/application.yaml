@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: /home/cerso/IdeaProjects/spring-boot-microservice-app/microservices-config-repo
+          skipSslValidation: true
+          clone-on-start: true
